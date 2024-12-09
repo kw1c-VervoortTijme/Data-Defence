@@ -17,7 +17,7 @@ public class pcinteraction : MonoBehaviour
     {
         Debug.Log("Interacted with the PC!");
         // Add your progress bar update logic here, e.g.:
-        FindObjectOfType<Progressmanager>().IncreaseProgress(0.1f); // Example: Increment progress
+        Object.FindAnyObjectByType<Progressmanager>().IncreaseProgress(0.1f); // Example: Increment progress
     }
 
     private void OnTriggerEnter(Collider other)
